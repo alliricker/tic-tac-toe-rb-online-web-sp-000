@@ -121,6 +121,7 @@ def play(board)
 counter = 0
   until over?(board) || draw?(board)
     turn(board)
+    current_player (board)
     counter += 1
   end
   if won?(board)
