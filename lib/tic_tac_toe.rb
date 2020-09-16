@@ -118,10 +118,8 @@ def winner(board)
 end
 
 def play(board)
-counter = 0
   until over?(board) || draw?(board)
     turn(board)
-    counter += 1
   end
   if won?(board)
     winner(board) == "X" || winner(board) == "O"
